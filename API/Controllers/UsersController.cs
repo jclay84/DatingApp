@@ -18,7 +18,7 @@ namespace API.Controllers
 
         }
 
-        [HttpGet]
+        [HttpGet]  // GET Endpoint used to return list of all AppUsers
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             var users = await _context.Users.ToListAsync();
@@ -26,7 +26,7 @@ namespace API.Controllers
             return users;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}")] // GET Endpoint used to return list of all AppUsers
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             return await _context.Users.FindAsync(id);
