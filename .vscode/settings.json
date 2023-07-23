@@ -1,0 +1,7 @@
+{
+	"editor.defaultFormatter": "csharpier.csharpier-vscode",
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"html.format.indentInnerHtml": true
+}
